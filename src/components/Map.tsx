@@ -1,4 +1,4 @@
-import { Hex, HexType } from "../gameUtils";
+import { Hex } from "../gameUtils";
 import { renderHex } from "./Hex";
 
 interface MapProps {
@@ -13,7 +13,7 @@ export const Map = ({ hexes }: MapProps) => {
       {hexes.map((row, rowIndex) => {
         return (
           <div className="hex-row" key={rowIndex}>
-            {row.map((hex, hexIndex) => renderHex(hex))}
+            {row.map((hex) => renderHex(hex))}
           </div>
         );
       })}

@@ -1,4 +1,4 @@
-import { Hex, HexType, HexWithTokenType, TokenValue } from "../gameUtils";
+import { Hex, HexWithTokenType, TokenValue } from "../gameUtils";
 
 interface HexProps {
   type: HexWithTokenType;
