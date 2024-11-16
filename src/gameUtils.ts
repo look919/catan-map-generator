@@ -1,4 +1,3 @@
-import { HexType } from "./gameUtils";
 export const mapSizes = [
   {
     kind: "small",
@@ -139,7 +138,7 @@ export const randomizeHexes = (size: MapSize) => {
           const tokenValues = Object.keys(tokenAmountsPerSize[size]).reduce(
             (acc, tokenValue) => {
               const amount =
-                tokenAmountsPerSize[size][tokenValue as TokenValue];
+                tokenAmountsPerSize[size][tokenValue as unknown as TokenValue];
               return acc.concat(Array(amount).fill(tokenValue));
             },
             [] as TokenValue[]

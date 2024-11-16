@@ -22,5 +22,5 @@ export const renderHex = ({ hexType, tokenValue }: Hex) => {
     return <HexWithoutToken type={hexType} />;
   }
 
-  return <HexWithToken type={hexType} tokenValue={tokenValue} />;
+  return <HexWithToken type={hexType} tokenValue={tokenValue as any} />;
 };
